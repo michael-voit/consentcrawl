@@ -3,8 +3,8 @@
 [![PyPI](https://img.shields.io/pypi/pyversions/consentcrawl.svg?maxAge=3600)](https://pypi.python.org/pypi/consentcrawl)
 
 # ConsentCrawl
-Automatically check for GDPR/CCPA consent by running a Playwright headless browser to check for marketing and analytics scripts firing before and after consent.
-- Detect 25+ consent managers
+Automatically check for GDPR/CCPA and cookie consent by running a Playwright headless browser to crawl and check for marketing and analytics scripts firing before and after consent.
+- Detect 25+ consent management platforms (CMP)
 - Detect unconsented third-party domains and cookies
 - Classify tracking domains based on 7 commonly used ad blocking lists
 - Keep screenshots before and after consent
@@ -132,6 +132,5 @@ The examples folder shows examples to run ConsentCrawl:
 - on Google Cloud Run with a simple FastAPI server that responds with the ConsentCrawl results on a POST request to a `/consentcrawl` endpoint.
 
 ## To Do
-- [ ] Follow redirects on URLs
 - [ ] Detect consent managers with cookies instead of just CSS selectors
 - [ ] Show progress when using CLI
